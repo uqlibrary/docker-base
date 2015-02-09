@@ -7,6 +7,4 @@ RUN \
   yum install -y java-1.7.0-openjdk && \
   yum clean all && \
   easy_install supervisor && \
-  pip install supervisor-stdout && \
   pip install awscli
-
