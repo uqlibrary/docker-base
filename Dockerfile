@@ -1,7 +1,7 @@
 FROM centos:centos7
 
-RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/epel-release.rpm
-RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+RUN rpm -Uvh http://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-13.ius.centos7.noarch.rpm
 
 RUN \
   yum update -y && \
