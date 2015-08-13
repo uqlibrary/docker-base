@@ -51,3 +51,6 @@ alias ffs="sudo -E !!"
 PATH=$PATH:$HOME/bin
 PATH=$PATH:/usr/sbin:/sbin:/bin
 export PATH
+
+TERM=xterm
+export TERM
