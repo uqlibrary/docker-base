@@ -19,6 +19,7 @@ RUN \
     tar \
     unzip \
     nano && \
+    jq && \
   yum clean all && \
   easy_install supervisor && \
   easy_install pip && \
