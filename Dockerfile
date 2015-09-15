@@ -18,7 +18,7 @@ RUN \
     wget \
     tar \
     unzip \
-    nano && \
+    nano \
     jq && \
   yum clean all && \
   easy_install supervisor && \
