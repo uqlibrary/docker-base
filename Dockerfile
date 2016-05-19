@@ -4,7 +4,7 @@ ENV HOME /root
 
 RUN ln -sf /usr/share/zoneinfo/Australia/Brisbane /etc/localtime
 
-RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-6.noarch.rpm
 RUN rpm -Uvh http://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-14.ius.centos7.noarch.rpm
 
 COPY etc/profile.d/lts.sh /etc/profile.d/lts.sh
@@ -20,6 +20,7 @@ RUN \
     tar \
     unzip \
     nano \
+    which \
     jq && \
   yum clean all && \
   easy_install supervisor && \
