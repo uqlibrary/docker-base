@@ -21,6 +21,7 @@ RUN \
     unzip \
     nano \
     which \
+    groff \
     jq && \
   yum clean all && \
   easy_install supervisor && \
