@@ -4,7 +4,7 @@ ENV HOME /root
 
 RUN ln -sf /usr/share/zoneinfo/Australia/Brisbane /etc/localtime
 
-RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
+RUN rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
 RUN rpm -Uvh http://dl.iuscommunity.org/pub/ius/stable/CentOS/7/x86_64/ius-release-1.0-14.ius.centos7.noarch.rpm
 
 COPY etc/profile.d/lts.sh /etc/profile.d/lts.sh
